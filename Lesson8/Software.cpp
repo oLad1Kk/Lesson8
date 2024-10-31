@@ -2,43 +2,36 @@
 
 Software::Software()
 {
+	name = "undefined";
+	manufacturer = "undefined";
 }
 
-Software::Software(string name, string company)
+Software::Software(string name, string manufacturer)
 {
-    this->name = name;
+	this->name = name;
+	this->manufacturer = manufacturer;
 }
 
 Software::~Software()
 {
-
 }
 
 string Software::getName() const
 {
-    return name;
+	return name;
 }
 
 string Software::getManufacturer() const
 {
-    return manufacturer;
+	return manufacturer;
 }
 
 void Software::setName(string name)
 {
-    this->name = name;
+	this->name = name;
 }
 
 void Software::setManufacturer(string manufacturer)
 {
-    this->name = name;
-}
-
-void Software::show() const
-{
-}
-
-void Software::isAvailable() const
-{
-    
+	this->manufacturer = manufacturer;
 }

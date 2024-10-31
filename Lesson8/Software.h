@@ -5,6 +5,7 @@
 using namespace std;
 class Software
 {
+protected:
 	string name;
 	string manufacturer;
 public:
@@ -19,7 +20,7 @@ public:
 	void setManufacturer(string manufacturer);
 
 	virtual void show()const = 0;
-	virtual void isAvailable()const = 0;
-
+	virtual bool isAvailable()const = 0;
+	virtual void load(ifstream& file) = 0;
 };
 
